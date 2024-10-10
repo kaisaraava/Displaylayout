@@ -14,9 +14,13 @@ body {
 }
 
 section {
+    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-}
-
+    }
+    
+    .section {
+        margin: 0 10px;
+    }
 #article {
     display: grid;
  grid-template-columns: 3fr 1fr;   
