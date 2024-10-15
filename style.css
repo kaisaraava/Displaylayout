@@ -5,12 +5,12 @@
 }
 
 header {
-    display:block;
-    display: flex;
-    justify-content: space-between;
+        display: flex;
+        justify-content: space-between;
 }
 body {
     font-family: Arial, sans-serif;
+    margin: 20px 50px 20px 50px;
 }
 
 section {
@@ -23,13 +23,38 @@ section {
     }
 #article {
     display: grid;
- grid-template-columns: 3fr 1fr;   
+ grid-template-columns: 3fr 1fr;
+ margin: 20px;
 }
-
 #aside {
     grid-template-columns: 3fr 1fr;
+    flex-direction: column;
+    margin: 20px;
+    gap:5px;
+}
+.gallery {
+    display: flex; /* Kasuta flex paigutust */
+    justify-content: flex-start; /* Joonda pildid vasakule */
+    flex-wrap: wrap; /* Lubab piltide ridade vahetust */
+    gap: 10px; /* Vahe piltide vahel */
 }
 
+.gallery-item {
+    flex: 1 0 150px; /* Piltide minimaalne laius */
+    max-width: 200px; /* Piltide maksimaalne laius */
+}
+
+.gallery-item img {
+    width: 100%; /* Pildi laius konteineris */
+    height: auto; /* Säilitab aspekti */
+    border-radius: 8px; /* Ümarad nurgad */
+}
+.gallery-container {
+    display: flex; /* Kasuta flex paigutust */
+    justify-content: flex-start; /* Joonda pildid vasakule */
+    flex-wrap: wrap; /* Lubab piltide ridade vahetust */
+    gap: 10px; /* Vahe piltide vahel */
+}
 footer {
         display: flex;
 }
