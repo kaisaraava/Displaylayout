@@ -55,6 +55,22 @@ section {
     flex-wrap: wrap; /* Lubab piltide ridade vahetust */
     gap: 10px; /* Vahe piltide vahel */
 }
+aplikatsiooniikoonid {
+    display: flex; /* Kasuta flexbox'i paigutuseks */
+    flex-wrap: wrap; /* Luba elementide rullimine järgmistesse ridadesse */
+    gap: 10px; /* Lisa veidi ruumi elementide vahele */
+}
+
+.ikon-item {
+    flex: 1 0 80px; /* Ikonite minimaalne laius */
+    max-width: 60px; /* Ikonite maksimaalne laius */
+}
+
+.ikon-item img {
+    width: 100%; /* Pilt võtab kogu oma konteineri laiusest */
+    height: auto; /* Säilita aspekt */
+    border-radius: 8px; /* Ümarad nurgad */
+}
 footer {
         display: flex;
 }
