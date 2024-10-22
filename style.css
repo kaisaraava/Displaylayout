@@ -55,7 +55,7 @@ section {
     flex-wrap: wrap; /* Lubab piltide ridade vahetust */
     gap: 10px; /* Vahe piltide vahel */
 }
-aplikatsiooniikoonid {
+.aplikatsiooniikoonid {
     display: flex; /* Kasuta flexbox'i paigutuseks */
     flex-wrap: wrap; /* Luba elementide rullimine järgmistesse ridadesse */
     gap: 10px; /* Lisa veidi ruumi elementide vahele */
