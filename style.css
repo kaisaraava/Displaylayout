@@ -7,12 +7,33 @@
 header {
         display: flex;
         justify-content: space-between;
-}
+} 
 body {
     font-family: Arial, sans-serif;
     margin: 20px 50px 20px 50px;
+    height: 100vh; /* Täida kogu kõrgus */
 }
 
+.flex-container {
+    display: flex;                          /* Flexbox paigutus */
+    justify-content: center;                /* Horisontaalne joondamine */
+    align-items: center;                    /* Vertikaalne joondamine */
+    height: 200px;                          /* Kasti kõrgus, muuda vastavalt vajadusele */
+    background-color: #f0f0f0;             /* Taustavärv konteinerile */
+    margin: 20px 0;                        /* Ülemine ja alumine vahe */
+}
+
+.box {
+    background-color: coral;                /* Taustavärv kastidele */
+    width: 20vw;                            /* Kasti laius (muuda vastavalt vajadusele) */
+    height: 20vh;                           /* Kasti kõrgus (muuda vastavalt vajadusele) */
+    margin: 10px;                           /* Vahe kastide vahel */
+    display: flex;                          /* Flexbox paigutus kastides */
+    justify-content: center;                /* Keskenda sisu horisontaalselt */
+    align-items: center;                    /* Keskenda sisu vertikaalselt */
+    border-radius: 5px;                    /* Nurgad ümaraks */
+    font-size: 1.5em;                       /* Teksti suurus */
+}
 section {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -31,6 +52,22 @@ section {
     flex-direction: column;
     margin: 20px;
     gap:5px;
+}
+.hover-box {
+    width: 100px;                     /* Kasti algne laius */
+    height: 100px;                    /* Kasti algne kõrgus */
+    background-color: coral;          /* Algne taustavärv */
+    display: flex;                    /* Keskenda sisu */
+    justify-content: center;          /* Keskenda horisontaalselt */
+    align-items: center;              /* Keskenda vertikaalselt */
+    font-size: 1.5em;                 /* Teksti suurus */
+    border-radius: 5px;               /* Nurgad ümaraks */
+    transition: all 0.3s ease;        /* Üleminek kõikide omaduste puhul */
+}
+
+.hover-box:hover {
+    transform: scale(1.2) rotate(10deg); /* Suurenda ja pöörle */
+    background-color: lightblue;      /* Muuda taustavärv hoveri ajal */
 }
 .gallery {
     display: flex; /* Kasuta flex paigutust */
@@ -75,8 +112,14 @@ section {
     position: fixed; /* Fikseeritud positsioon */
     bottom: 20px;    /* Alt 20px kaugusele */
     right: 20px;     /* Parempoolsest servast 20px kaugusele */
-    z-index: 1000;   /* Veendu, et see element on teiste kohal */
+    z-index: 1000;   /* Z element positisoneerib märke*/
 }
 footer {
         display: flex;
+        position: fixed;
+        bottom: 10px;
+    left: 20px;
+    width: 100%;
+    padding: 10px;
+    z-index: 1000;
 }
