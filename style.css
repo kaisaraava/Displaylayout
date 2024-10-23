@@ -71,6 +71,12 @@ section {
     height: auto; /* Säilita aspekt */
     border-radius: 8px; /* Ümarad nurgad */
 }
+.fixed-element {
+    position: fixed; /* Fikseeritud positsioon */
+    bottom: 20px;    /* Alt 20px kaugusele */
+    right: 20px;     /* Parempoolsest servast 20px kaugusele */
+    z-index: 1000;   /* Veendu, et see element on teiste kohal */
+}
 footer {
         display: flex;
 }
