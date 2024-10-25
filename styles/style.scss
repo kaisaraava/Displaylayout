@@ -5,7 +5,6 @@ body {
   margin: 20px 50px 20px 50px;
   height: 100vh; /* Täida kogu kõrgus */
 }
-
 .flex-container {
   display: flex; /* Flexbox paigutus */
   justify-content: center; /* Horisontaalne joondamine */
@@ -108,10 +107,11 @@ section {
 }
 footer {
   display: flex;
-  position: fixed;
+  justify-content: center;
+ /*  position: fixed; */
   bottom: 10px;
   left: 20px;
   width: 100%;
   padding: 10px;
-  z-index: 1000;
+  /* z-index: 1000; */
 }
