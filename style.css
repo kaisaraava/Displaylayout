@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,28 +11,28 @@ header {
 body {
     font-family: Arial, sans-serif;
     margin: 20px 50px 20px 50px;
-    height: 100vh; /* Täida kogu kõrgus */
+    height: 100vh; 
 }
 
 .flex-container {
-    display: flex;                          /* Flexbox paigutus */
-    justify-content: center;                /* Horisontaalne joondamine */
-    align-items: center;                    /* Vertikaalne joondamine */
-    height: 200px;                          /* Kasti kõrgus, muuda vastavalt vajadusele */
-    background-color: #f0f0f0;             /* Taustavärv konteinerile */
-    margin: 20px 0;                        /* Ülemine ja alumine vahe */
+    display: flex;                         
+    justify-content: center;               
+    align-items: center;                   
+    height: 200px;             
+    background-color: #f0f0f0;           
+    margin: 20px 0;                        
 }
 
 .box {
-    background-color: coral;                /* Taustavärv kastidele */
-    width: 20vw;                            /* Kasti laius (muuda vastavalt vajadusele) */
-    height: 20vh;                           /* Kasti kõrgus (muuda vastavalt vajadusele) */
-    margin: 10px;                           /* Vahe kastide vahel */
-    display: flex;                          /* Flexbox paigutus kastides */
-    justify-content: center;                /* Keskenda sisu horisontaalselt */
-    align-items: center;                    /* Keskenda sisu vertikaalselt */
-    border-radius: 5px;                    /* Nurgad ümaraks */
-    font-size: 1.5em;                       /* Teksti suurus */
+    background-color: coral;               
+    width: 20vw;                       
+    height: 20vh;                         
+    margin: 10px;                          
+    display: flex;                        
+    justify-content: center;           
+    align-items: center;                    
+    border-radius: 5px;                    
+    font-size: 1.5em;                       
 }
 section {
     display: grid;
@@ -54,65 +54,64 @@ section {
     gap:5px;
 }
 .hover-box {
-    width: 100px;                     /* Kasti algne laius */
-    height: 100px;                    /* Kasti algne kõrgus */
-    background-color: coral;          /* Algne taustavärv */
-    display: flex;                    /* Keskenda sisu */
-    justify-content: center;          /* Keskenda horisontaalselt */
-    align-items: center;              /* Keskenda vertikaalselt */
-    font-size: 1.5em;                 /* Teksti suurus */
-    border-radius: 5px;               /* Nurgad ümaraks */
-    transition: all 0.3s ease;        /* Üleminek kõikide omaduste puhul */
+    width: 100px;                    
+    height: 100px;                   
+    background-color: coral;        
+    display: flex;                    
+    justify-content: center;        
+    align-items: center;             
+    font-size: 1.5em;                
+    border-radius: 5px;              
+    transition: all 0.3s ease;       
 }
 
 .hover-box:hover {
-    transform: scale(1.2) rotate(10deg); /* Suurenda ja pöörle */
-    background-color: lightblue;      /* Muuda taustavärv hoveri ajal */
+    transform: scale(1.2) rotate(10deg); 
+    background-color: lightblue;     
 }
 .gallery {
-    display: flex; /* Kasuta flex paigutust */
-    justify-content: flex-start; /* Joonda pildid vasakule */
-    flex-wrap: wrap; /* Lubab piltide ridade vahetust */
-    gap: 10px; /* Vahe piltide vahel */
-}
+    display: flex; 
+    justify-content: flex-start; 
+    flex-wrap: wrap; 
+    gap: 10px;
 
 .gallery-item {
-    flex: 1 0 150px; /* Piltide minimaalne laius */
-    max-width: 200px; /* Piltide maksimaalne laius */
+    flex: 1 0 150px; 
+    max-width: 200px; 
 }
 
 .gallery-item img {
-    width: 100%; /* Pildi laius konteineris */
-    height: auto; /* Säilitab aspekti */
-    border-radius: 8px; /* Ümarad nurgad */
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
 }
 .gallery-container {
-    display: flex; /* Kasuta flex paigutust */
-    justify-content: flex-start; /* Joonda pildid vasakule */
-    flex-wrap: wrap; /* Lubab piltide ridade vahetust */
-    gap: 10px; /* Vahe piltide vahel */
+    display: flex; 
+    justify-content: flex-start; 
+    flex-wrap: wrap; 
+    gap: 10px; 
 }
 .aplikatsiooniikoonid {
-    display: flex; /* Kasuta flexbox'i paigutuseks */
-    flex-wrap: wrap; /* Luba elementide rullimine järgmistesse ridadesse */
-    gap: 10px; /* Lisa veidi ruumi elementide vahele */
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px; 
 }
 
 .ikon-item {
-    flex: 1 0 80px; /* Ikonite minimaalne laius */
-    max-width: 60px; /* Ikonite maksimaalne laius */
+    flex: 1 0 80px;
+    max-width: 60px; 
 }
 
 .ikon-item img {
-    width: 100%; /* Pilt võtab kogu oma konteineri laiusest */
-    height: auto; /* Säilita aspekt */
-    border-radius: 8px; /* Ümarad nurgad */
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
 }
 .fixed-element {
-    position: fixed; /* Fikseeritud positsioon */
-    bottom: 20px;    /* Alt 20px kaugusele */
-    right: 20px;     /* Parempoolsest servast 20px kaugusele */
-    z-index: 1000;   /* Z element positisoneerib märke*/
+    position: fixed; 
+    bottom: 20px;    
+    right: 20px;  
+    z-index: 1000;   
 }
 footer {
         display: flex;
@@ -122,4 +121,4 @@ footer {
     width: 100%;
     padding: 10px;
     z-index: 1000;
-}
+} */

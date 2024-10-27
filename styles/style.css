@@ -1,21 +1,17 @@
-@charset "UTF-8";
-header {
-  display: flex;
-  justify-content: space-between;
-}
+@import "./header";
 
 body {
   font-family: Arial, sans-serif;
   margin: 20px 50px 20px 50px;
   height: 100vh; /* Täida kogu kõrgus */
 }
-
 .flex-container {
   display: flex; /* Flexbox paigutus */
+  border-radius: 5px;
   justify-content: center; /* Horisontaalne joondamine */
   align-items: center; /* Vertikaalne joondamine */
   height: 200px; /* Kasti kõrgus, muuda vastavalt vajadusele */
-  background-color: #f0f0f0; /* Taustavärv konteinerile */
+  background-color: lightblue; 
   margin: 20px 0; /* Ülemine ja alumine vahe */
 }
 
@@ -30,7 +26,6 @@ body {
   border-radius: 5px; /* Nurgad ümaraks */
   font-size: 1.5em; /* Teksti suurus */
 }
-
 section {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -39,24 +34,21 @@ section {
 .section {
   margin: 0 10px;
 }
-
 #article {
   display: grid;
   grid-template-columns: 3fr 1fr;
   margin: 20px;
 }
-
 #aside {
   grid-template-columns: 3fr 1fr;
   flex-direction: column;
   margin: 20px;
   gap: 5px;
 }
-
 .hover-box {
   width: 100px; /* Kasti algne laius */
   height: 100px; /* Kasti algne kõrgus */
-  background-color: coral; /* Algne taustavärv */
+  background-color: lightgoldenrodyellow; /* Algne taustavärv */
   display: flex; /* Keskenda sisu */
   justify-content: center; /* Keskenda horisontaalselt */
   align-items: center; /* Keskenda vertikaalselt */
@@ -69,7 +61,6 @@ section {
   transform: scale(1.2) rotate(10deg); /* Suurenda ja pöörle */
   background-color: lightblue; /* Muuda taustavärv hoveri ajal */
 }
-
 .gallery {
   display: flex; /* Kasuta flex paigutust */
   justify-content: flex-start; /* Joonda pildid vasakule */
@@ -87,17 +78,17 @@ section {
   height: auto; /* Säilitab aspekti */
   border-radius: 8px; /* Ümarad nurgad */
 }
-
 .gallery-container {
   display: flex; /* Kasuta flex paigutust */
   justify-content: flex-start; /* Joonda pildid vasakule */
   flex-wrap: wrap; /* Lubab piltide ridade vahetust */
   gap: 10px; /* Vahe piltide vahel */
 }
-
 .aplikatsiooniikoonid {
   display: flex; /* Kasuta flexbox'i paigutuseks */
+  border-radius: 5px;
   flex-wrap: wrap; /* Luba elementide rullimine järgmistesse ridadesse */
+  background-color: lightgreen;
   gap: 10px; /* Lisa veidi ruumi elementide vahele */
 }
 
@@ -111,20 +102,24 @@ section {
   height: auto; /* Säilita aspekt */
   border-radius: 8px; /* Ümarad nurgad */
 }
-
-.fixed-element {
-  position: fixed; /* Fikseeritud positsioon */
-  bottom: 20px; /* Alt 20px kaugusele */
-  right: 20px; /* Parempoolsest servast 20px kaugusele */
-  z-index: 1000; /* Z element positisoneerib märke*/
+ .fixed-element {
+position: relatives; 
+  bottom: 20px; 
+  right: 20px;  
+  z-index: 1000; 
+    padding: 20px;
+    border-radius: 5px;
+    background-color: lightcoral;
+    text-align: center; /* Teksti keskjoondamine */
+    margin: 20px 0; 
 }
-
 footer {
   display: flex;
-  position: fixed;
+  justify-content: center;
+  position: relative;
   bottom: 10px;
   left: 20px;
   width: 100%;
   padding: 10px;
-  z-index: 1000;
-}/*# sourceMappingURL=style.css.map */
+   z-index: 1000; 
+}

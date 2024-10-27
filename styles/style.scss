@@ -10,7 +10,7 @@ body {
   justify-content: center; /* Horisontaalne joondamine */
   align-items: center; /* Vertikaalne joondamine */
   height: 200px; /* Kasti kõrgus, muuda vastavalt vajadusele */
-  background-color: #f0f0f0; /* Taustavärv konteinerile */
+  background-color: lightblue; 
   margin: 20px 0; /* Ülemine ja alumine vahe */
 }
 
@@ -47,7 +47,7 @@ section {
 .hover-box {
   width: 100px; /* Kasti algne laius */
   height: 100px; /* Kasti algne kõrgus */
-  background-color: coral; /* Algne taustavärv */
+  background-color: lightgoldenrodyellow; /* Algne taustavärv */
   display: flex; /* Keskenda sisu */
   justify-content: center; /* Keskenda horisontaalselt */
   align-items: center; /* Keskenda vertikaalselt */
@@ -86,6 +86,7 @@ section {
 .aplikatsiooniikoonid {
   display: flex; /* Kasuta flexbox'i paigutuseks */
   flex-wrap: wrap; /* Luba elementide rullimine järgmistesse ridadesse */
+  background-color: lightgreen;
   gap: 10px; /* Lisa veidi ruumi elementide vahele */
 }
 
@@ -99,19 +100,24 @@ section {
   height: auto; /* Säilita aspekt */
   border-radius: 8px; /* Ümarad nurgad */
 }
-.fixed-element {
-  position: fixed; /* Fikseeritud positsioon */
-  bottom: 20px; /* Alt 20px kaugusele */
-  right: 20px; /* Parempoolsest servast 20px kaugusele */
-  z-index: 1000; /* Z element positisoneerib märke*/
+ .fixed-element {
+position: relatives; 
+  bottom: 20px; 
+  right: 20px;  
+  z-index: 1000; 
+    padding: 20px;
+    border-radius: 5px;
+    background-color: lightcoral;
+    text-align: center; /* Teksti keskjoondamine */
+    margin: 20px 0; 
 }
 footer {
   display: flex;
   justify-content: center;
- /*  position: fixed; */
+  position: relative;
   bottom: 10px;
   left: 20px;
   width: 100%;
   padding: 10px;
-  /* z-index: 1000; */
+   z-index: 1000; 
 }
