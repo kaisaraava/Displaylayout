@@ -168,8 +168,6 @@ footer {
   justify-content: center;
   position: relative;
   bottom: 10px;
-  left: 20px;
-  width: 100%;
   padding: 10px;
    z-index: 1000; 
 }
