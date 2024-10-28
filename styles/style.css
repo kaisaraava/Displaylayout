@@ -23,6 +23,7 @@ body {
   display: flex; /* Flexbox paigutus kastides */
   justify-content: center; /* Keskenda sisu horisontaalselt */
   align-items: center; /* Keskenda sisu vertikaalselt */
+  text-align: center;
   border-radius: 5px; /* Nurgad ümaraks */
   font-size: 1.5em; /* Teksti suurus */
 }
@@ -45,6 +46,7 @@ section {
   margin: 20px;
   gap: 5px;
 }
+
 .hover-box {
   width: 100px; /* Kasti algne laius */
   height: 100px; /* Kasti algne kõrgus */
@@ -60,6 +62,54 @@ section {
 .hover-box:hover {
   transform: scale(1.2) rotate(10deg); /* Suurenda ja pöörle */
   background-color: lightblue; /* Muuda taustavärv hoveri ajal */
+}
+.h4 {
+  color: coral;
+  font-family: lato;
+  font-weight: 500;
+  font-size: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-animation: bounceIn 1.5s both 1s;
+  margin-top: 10px;
+}
+
+@-webkit-keyframes bounceIn{
+  0% { 
+    transform: scale(0.1); 
+    -webkit-transform: scale(0.1);
+    opacity: 0;
+  } 
+
+  60% { 
+    transform: scale(1.2); 
+    -webkit-transform: scale(1.2);
+    opacity: 1;
+  } 
+
+  100% { 
+    transform: scale(1); 
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes bounceIn{
+  0% { 
+    transform: scale(0.1); 
+    -webkit-transform: scale(0.1);
+    opacity: 0;
+  } 
+
+  60% { 
+    transform: scale(1.2); 
+    -webkit-transform: scale(1.2);
+    opacity: 1;
+  } 
+
+  100% { 
+    transform: scale(1); 
+    -webkit-transform: scale(1);
+  }
 }
 .gallery {
   display: flex; /* Kasuta flex paigutust */
